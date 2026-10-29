@@ -366,6 +366,16 @@ footer p{font-size:15.5px;margin-top:14px;max-width:300px;color:#D3DEEA}
   .hx-dots{inset-inline-end:-8px;width:100px;height:100px}
 }
 
+
+/* places */
+.plg{display:grid;grid-template-columns:repeat(7,1fr);gap:14px}
+.pl1{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px 10px;text-align:center;transition:border-color .2s,transform .2s}
+.pl1:hover{border-color:#FFC107;transform:translateY(-3px)}
+.pi1{width:62px;height:62px;border-radius:50%;background:var(--soft);color:var(--teal);display:grid;place-items:center;margin:0 auto 10px;border:2px solid #FFC107}
+.pi1 .ico{width:30px;height:30px}
+.pl1 b{font-size:17px}
+@media (max-width:1020px){.plg{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:680px){.plg{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}.pl1{padding:14px 6px;width:calc(33.333% - 7px)}.pi1{width:50px;height:50px}.pi1 .ico{width:24px;height:24px}.pl1 b{font-size:14.5px}#places .row .btn{flex:1 1 100%}}
 /* services grid (icons) */
 .eg{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .ec{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px 20px;position:relative;transition:box-shadow .2s,transform .2s}
@@ -433,6 +443,13 @@ footer p{font-size:15.5px;margin-top:14px;max-width:300px;color:#D3DEEA}
   <symbol id="i-switch" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="3"/><rect x="9" y="7" width="6" height="10" rx="2"/><path d="M9 12h6"/></symbol>
   <symbol id="i-heater" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="16" rx="6"/><path d="M12 19v2M9 21h6M12 8c-1.5 1.5-1.5 3 0 4.5"/></symbol>
   <symbol id="i-cam" viewBox="0 0 24 24"><path d="M3 8l12-4 2 6-12 4z"/><path d="M9 12l1 4h4M17 9l4-1v6l-4-1"/></symbol>
+  <symbol id="i-villa" viewBox="0 0 24 24"><path d="M3 21V10l6-5 6 5v11"/><path d="M15 21V13h6v8M3 21h18M7 21v-4h4v4"/></symbol>
+  <symbol id="i-rest" viewBox="0 0 24 24"><path d="M2 20 12 4l10 16z"/><path d="M12 4v16M8 20l4-6 4 6"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 18V7M3 13h18v5M21 18v-3"/><rect x="6" y="9" width="5" height="4" rx="1"/></symbol>
+  <symbol id="i-food" viewBox="0 0 24 24"><path d="M7 3v18M4 3v5a3 3 0 0 0 6 0V3M17 21V3c-2 0-4 2-4 6v4h4"/></symbol>
+  <symbol id="i-hotel" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M10 21v-4h4v4"/></symbol>
+  <symbol id="i-fuel" viewBox="0 0 24 24"><rect x="4" y="3" width="10" height="18" rx="1"/><path d="M4 10h10M14 8l4 2v7a2 2 0 0 0 4 0V9l-3-3"/></symbol>
+  <symbol id="i-mosque" viewBox="0 0 24 24"><path d="M6 21v-7a6 6 0 0 1 12 0v7zM12 8V4M3 21V11M21 21V11M2 21h20"/><path d="M10 21v-3a2 2 0 0 1 4 0v3"/></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
 </svg>
 <div class="top"><div class="wrap">
@@ -493,6 +510,12 @@ footer p{font-size:15.5px;margin-top:14px;max-width:300px;color:#D3DEEA}
   <div class="eg"><div class="ec"><span class="ei"><svg class="ico"><use href="#i-cable"/></svg></span><h3>تمديدات كهربائية</h3><p>تمديد كهرباء للبيوت والفلل والمحلات الجديدة، أو تجديد التمديدات القديمة.</p><a href="#" class="js-call"><svg class="ico flip"><use href="#i-phone"/></svg> اطلب الخدمة</a></div><div class="ec"><span class="ei"><svg class="ico"><use href="#i-panel"/></svg></span><h3>صيانة الطبلون</h3><p>فحص لوحة الكهرباء وتغيير القواطع التالفة وترتيب التوزيع.</p><a href="#" class="js-call"><svg class="ico flip"><use href="#i-phone"/></svg> اطلب الخدمة</a></div><div class="ec"><span class="ei"><svg class="ico"><use href="#i-bolt"/></svg></span><h3>حل الالتماس والفصل</h3><p>نحدد سبب الالتماس أو فصل القاطع ونصلحه بأمان.</p><a href="#" class="js-call"><svg class="ico flip"><use href="#i-phone"/></svg> اطلب الخدمة</a></div><div class="ec"><span class="ei"><svg class="ico"><use href="#i-bulb"/></svg></span><h3>تركيب إنارة وثريات</h3><p>سبوت لايت، ثريات، إنارة مخفية وإنارة خارجية.</p><a href="#" class="js-call"><svg class="ico flip"><use href="#i-phone"/></svg> اطلب الخدمة</a></div><div class="ec"><span class="ei"><svg class="ico"><use href="#i-plug"/></svg></span><h3>أفياش ومفاتيح</h3><p>تركيب وتغيير الأفياش والمفاتيح وإضافة نقاط جديدة.</p><a href="#" class="js-call"><svg class="ico flip"><use href="#i-phone"/></svg> اطلب الخدمة</a></div><div class="ec"><span class="ei"><svg class="ico"><use href="#i-heater"/></svg></span><h3>سخانات ومراوح شفط</h3><p>تركيب وصيانة السخانات ومراوح الشفط في الحمامات والمطابخ.</p><a href="#" class="js-call"><svg class="ico flip"><use href="#i-phone"/></svg> اطلب الخدمة</a></div><div class="ec"><span class="ei"><svg class="ico"><use href="#i-switch"/></svg></span><h3>كهرباء المكيفات</h3><p>تمديد خط مستقل للمكيف مع قاطع مناسب لحمايته.</p><a href="#" class="js-call"><svg class="ico flip"><use href="#i-phone"/></svg> اطلب الخدمة</a></div><div class="ec"><span class="ei"><svg class="ico"><use href="#i-cam"/></svg></span><h3>كاميرات وأجراس</h3><p>تركيب كاميرات مراقبة وأجراس وإنتركم للأبواب.</p><a href="#" class="js-call"><svg class="ico flip"><use href="#i-phone"/></svg> اطلب الخدمة</a></div></div>
 </div></section>
 
+<section id="places"><div class="wrap">
+  <div class="head c"><span class="tag">أماكن نخدمها</span><h2>نشتغل في <span>كل الأماكن</span></h2><p>تمديدات وصيانة كهرباء لأي مكان، صغير أو كبير.</p></div>
+  <div class="plg"><div class="pl1"><span class="pi1"><svg class="ico"><use href="#i-villa"/></svg></span><b>فلل</b></div><div class="pl1"><span class="pi1"><svg class="ico"><use href="#i-rest"/></svg></span><b>استراحات</b></div><div class="pl1"><span class="pi1"><svg class="ico"><use href="#i-bed"/></svg></span><b>غرف وشقق</b></div><div class="pl1"><span class="pi1"><svg class="ico"><use href="#i-food"/></svg></span><b>مطاعم</b></div><div class="pl1"><span class="pi1"><svg class="ico"><use href="#i-hotel"/></svg></span><b>فنادق</b></div><div class="pl1"><span class="pi1"><svg class="ico"><use href="#i-fuel"/></svg></span><b>محطات</b></div><div class="pl1"><span class="pi1"><svg class="ico"><use href="#i-mosque"/></svg></span><b>مساجد</b></div></div>
+  <div class="row" style="justify-content:center;margin-top:30px"><a href="#" class="btn btn-org js-call"><svg class="ico flip"><use href="#i-phone"/></svg> اتصل <span dir="ltr">0593069228</span></a><a href="#" class="btn btn-line js-wa"><svg class="ico"><use href="#i-wa"/></svg> راسلنا واتساب</a></div>
+</div></section>
+
 <section class="why" id="why"><div class="wrap">
   <div class="head c"><span class="tag">لماذا تختارنا</span><h2>كهرباء آمنة، <span>وشغل يدوم</span></h2></div>
   <div class="wgrid">
@@ -501,7 +524,7 @@ footer p{font-size:15.5px;margin-top:14px;max-width:300px;color:#D3DEEA}
     <div class="w"><span class="wi"><svg class="ico"><use href="#i-tag"/></svg></span><h3>السعر قبل الشغل</h3><p>نفحص ونعطيك السعر قبل ما نبدأ، بدون مفاجآت.</p></div>
     <div class="w"><span class="wi"><svg class="ico"><use href="#i-panel"/></svg></span><h3>قطع أصلية</h3><p>أسلاك وقواطع وأفياش معتمدة وآمنة.</p></div>
     <div class="w"><span class="wi"><svg class="ico"><use href="#i-shield"/></svg></span><h3>ضمان على الشغل</h3><p>لو رجعت نفس المشكلة، نرجع ونصلحها.</p></div>
-    <div class="w"><span class="wi"><svg class="ico"><use href="#i-house"/></svg></span><h3>بيوت ومحلات</h3><p>شقق وفلل واستراحات ومحلات ومكاتب.</p></div>
+    <div class="w"><span class="wi"><svg class="ico"><use href="#i-house"/></svg></span><h3>كل الأماكن</h3><p>فلل واستراحات ومطاعم وفنادق ومحطات ومساجد.</p></div>
   </div>
 </div></section>
 
